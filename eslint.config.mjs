@@ -50,6 +50,11 @@ export default [{
             style: "camelCase",
         }],
 
+        "prettier/prettier": [
+            "error",
+            {endOfLine: "auto"}
+        ],
+
         "@angular-eslint/use-lifecycle-interface": ["error"],
         "@typescript-eslint/member-ordering": 0,
         "@typescript-eslint/naming-convention": 0,
