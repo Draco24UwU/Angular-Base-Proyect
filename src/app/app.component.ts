@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'Tests-Angular';
+  //* Ancho inicial del side bar.
+  navbarWidth = 'ml-20 mt-7';
+
+  onNavbarWidthChange(width: string) {
+    this.navbarWidth = width;
+  }
 }

@@ -8,9 +8,11 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DropdownModule } from 'primeng/dropdown';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ButtonModule } from 'primeng/button';
+import { NavItemComponent } from './components/navbar/nav-item.component';
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
-  declarations: [NavbarComponent],
+  declarations: [NavbarComponent, NavItemComponent],
   imports: [
     CommonModule,
     // * NG prime
@@ -19,6 +21,7 @@ import { ButtonModule } from 'primeng/button';
     InputTextareaModule,
     DropdownModule,
     ButtonModule,
+    TooltipModule,
   ],
   exports: [
     // * NG prime
@@ -27,9 +30,11 @@ import { ButtonModule } from 'primeng/button';
     InputTextareaModule,
     DropdownModule,
     ButtonModule,
+    TooltipModule,
 
     //* Components
     NavbarComponent,
+    NavItemComponent,
   ],
 })
 export class SharedModule {}

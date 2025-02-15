@@ -13,3 +13,20 @@
 }
 
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary: #161D2A;
+  --secondary: #252E3A;
+  --tertiary: #3C4554;
+
+  --constrast: #9FA6B4;
+}
+
+
+// * Ng-Prime
+
+.p-button{
+  outline: none;
+  box-shadow: none;
+  border:  none;
+}

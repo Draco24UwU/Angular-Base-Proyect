@@ -1,6 +1,4 @@
-<div>
-  <app-navbar />
-  <section class="ml-32">
-    <router-outlet />
-  </section>
-</div>
+<app-navbar (navbarWidthChange)="onNavbarWidthChange($event)" />
+<section [ngClass]="navbarWidth">
+  <router-outlet />
+</section>
