@@ -6,7 +6,7 @@ import { elemento_nav, elementos_nav } from '../../constants/navbar.-constants';
   template: `
     <ng-container>
       <nav
-        class="flex flex-col justify-between items-center bg-primary h-screen absolute top-0 left-0 transition-all duration-300 ease-in-out"
+        class="flex flex-col justify-between items-center bg-primary h-screen absolute top-0 left-0 transition-all duration-300 ease-in-out z-50"
         [ngClass]="expandBar ? 'w-60' : 'w-16'">
         <ul
           class="flex flex-col gap-5 w-full items-start justify-between list-none border-r pt-4 border-black/50 transition-all duration-300 ease-in-out">
@@ -58,7 +58,7 @@ import { elemento_nav, elementos_nav } from '../../constants/navbar.-constants';
             </section>
           } @else {
             <div
-              class="flex flex-col items-center justify-center p-2 rounded-full bg-slate-800">
+              class="flex flex-col items-center justify-center p-2 rounded-full bg-slate-800 over">
               <p>G</p>
             </div>
           }
@@ -88,8 +88,8 @@ export class NavbarComponent {
   //* Metodo del Output para emiitir el nuevo width de [ngClass]="expandBar ? 'w-60' : 'w-16'"
   emitNavbarWidth() {
     const width = this.expandBar
-      ? 'ml-72 mt-7 transition-all duration-300 ease-in-out'
-      : 'ml-20 mt-7 transition-all duration-300 ease-in-out';
+      ? 'ml-72 mt-7 transition-all duration-300 ease-in-out overflow-hidden'
+      : 'ml-20 mt-7 transition-all duration-300 ease-in-out overflow-hidden';
     this.navbarWidthChange.emit(width);
   }
 }

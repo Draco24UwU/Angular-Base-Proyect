@@ -1,4 +1,7 @@
 <app-navbar (navbarWidthChange)="onNavbarWidthChange($event)" />
-<section [ngClass]="navbarWidth">
-  <router-outlet />
+<section
+  [ngClass]="navbarWidth"
+  class="overflow-hidden"
+  [@routeAnimation]="prepareRoute(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
 </section>

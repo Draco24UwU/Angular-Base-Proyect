@@ -7,11 +7,13 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () =>
       import('./pages/home/home.module').then(m => m.HomeModule),
+    data: { animation: 'home' },
   },
   {
     path: 'hero',
     loadChildren: () =>
       import('./pages/hero/hero.module').then(m => m.HeroModule),
+    data: { animation: 'hero' },
   },
 ];
 

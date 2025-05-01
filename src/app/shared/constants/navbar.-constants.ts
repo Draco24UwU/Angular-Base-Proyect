@@ -72,6 +72,11 @@ export const elementos_nav: elemento_nav[] = [
     route: '/hero',
   },
   {
+    text: 'Hero 2',
+    icon: 'bx bx-box',
+    route: '/hero/test',
+  },
+  {
     text: 'Home',
     icon: 'bx bx-home',
     route: '/home',
